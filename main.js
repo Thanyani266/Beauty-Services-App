@@ -1,4 +1,4 @@
-const btnQ = document.querySelector(".btn-ques");
+    const btnQ = document.querySelector(".btn-ques");
     const btnQ1 = document.querySelector(".btn-ques1");
     const btnQ2 = document.querySelector(".btn-ques2");
     const textAns = document.querySelector(".txt-ans");
