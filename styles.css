@@ -1,0 +1,7 @@
+.btn-ques, .btn-ques1, .btn-ques2 {
+    cursor: pointer;
+}
+
+.txt-ans, .txt-ans1, .txt-ans2 {
+    display: none;
+}
