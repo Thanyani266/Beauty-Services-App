@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhutudzi | Gift Cards</title>
+    <title>Edzani | Gift Cards</title>
     <!-- CSS Link -->
      <link rel="stylesheet" href="../styles.css">
     <!-- Font Awesome -->
@@ -32,25 +32,30 @@ rel="stylesheet"
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
     <!-- Container wrapper -->
-    <div class="container-fluid">
+    <div class="container-fluid topnav mynavbar">
       <!-- Toggle button -->
       <button
         data-mdb-collapse-init
-        class="navbar-toggler"
+        class="navbar-toggler toggle-button"
         type="button"
         data-mdb-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onclick="navbarToggleIcon()"
       >
-        <i class="fas fa-bars"></i>
+      <!-- <i class="fa-solid fa-bars fa-xl"></i> -->
+      <i class="fa-solid fa-bars fa-xl"></i>
       </button>
   
       <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse collapsible-content navbar-collapse text-md-center" id="navbarSupportedContent">
         
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item home-page">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
           <li class="nav-item">
             <div class="dropdown">
               <a
@@ -77,32 +82,31 @@ rel="stylesheet"
           <li class="nav-item">
             <a class="nav-link" href="./weddings.html">Weddings</a>
           </li>
-          <li class="nav-item me-5">
+          <li class="nav-item md-me-5 lg-me-0">
             <a class="nav-link" href="./booking.html">Become a Pro</a>
           </li>
-          
         </ul>
         <!-- Navbar brand -->
-      <a class="navbar-brand mt-2" href="../index.html" style="margin-right: 40%;">
-        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</span>
+      <a class="home-logo navbar-brand mt-2" href="../index.html">
+        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
       </a>
         <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
-      <!-- Right elements -->
-      <div class="d-flex align-items-center">
+         <!-- Right elements -->
+      <div class="d-flex right-elements">
         <!-- Sign In -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav gap-2">
           <li class="nav-item">
-              <a class="nav-link fw-bold" href="./signin.html">Sign In</a>
+              <a class="nav-link fw-bold btn-outline-muted rounded-pill bg-primary bg-opacity-25" href="./signin.html">Sign In</a>
           </li>
           <!-- Booking -->
           <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-underline" href="./booking.html">Book</a>
+            <a class="nav-link fw-bold text-secondary text-decoration-underline btn-outline-secondary rounded" href="./booking.html">Book</a>
           </li>
         </ul>
       </div>
       <!-- Right elements -->
+      </div>
+      <!-- Collapsible wrapper -->
     </div>
     <!-- Container wrapper -->
   </nav>
@@ -111,11 +115,11 @@ rel="stylesheet"
   <!-- Container -->
   <div class="container-fluid mt-2" style="background: blue;">
     <div class="row d-flex align-items-center">
-      <div class="col text-center p-5" style="background: blue;">
+      <div class="col-lg-6 col-md-6 col-sm-12 text-center p-5" style="background: blue;">
         <span class="display-4 text-muted fw-bold text-uppercase">Give the gift of glam</span>
         <p class="fs-4 text-white">Spoil the ones you love with professional glam on demand. They'll pick the time and place — and we'll come to pamper.</p>
       </div>
-      <div class="col">
+      <div class="col-lg-6 col-md-6 col-sm-12">
         <img src="../images/GS_gift_card_hero.webp" class="img-fluid" alt="GS_gift_card_hero" />
       </div>
     </div>
@@ -136,11 +140,11 @@ rel="stylesheet"
     <h6 class="text-primary text-uppercase mb-3">step 1</h6>
     <h1 class="fw-bold fs-1 mb-3">Choose a gift</h1>
     <div class="row gap-2 mb-5 mx-auto">
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
           <h4 class="fw-bold">Gift Cards</h4>
           <p class="text-secondary">Let them choose their gift</p>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
           <h4 class="fw-bold">Package</h4>
           <p class="text-secondary">For hair, makeup and nails</p>
         </div>
@@ -150,46 +154,46 @@ rel="stylesheet"
     <h1 class="fw-bold fs-1 mb-3">Choose an amount</h1>
     <p>E-gift cards can be applied to any service. We'll add tax & gratuity to the price before checkout so that the recipient can apply your gift to their tax & gratuity as well.</p>
     <div class="row gap-2 mb-5 mx-auto">
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
           <h4 class="fw-bold">$60</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">$90</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">$120</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">$150</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">Custom</h4>
         </div>
     </div>
     <h5 class="fw-bold">What is the occasion?</h5>
     <div class="row gap-2 mb-5 mx-auto">
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
           <h4 class="fw-bold">Holidays</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">Birthday</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">Anniversary</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">Other</h4>
         </div>
     </div>
     <h5 class="fw-bold">Personal Message</h5>
-    <div class="mb-5">
-        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Add a personal message (Optional)" rows="4" style="max-width: 900px;margin-left: 15%;"></textarea>
+    <div class="mb-5" style="margin-left: 30%;margin-right: 30%;">
+      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Add a personal message (Optional)" rows="4" style="max-width: 900px;margin-left: 15%;"></textarea>
     </div>
     <hr class="text-success">
     <h6 class="text-primary text-uppercase mb-3 mt-5">step 3</h6>
     <h1 class="fw-bold fs-1 mb-3">Add recipient details</h1>
     <div class="mb-3" style="margin-left: 30%;margin-right: 30%;">
-        <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="First Name">
+      <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="First Name">
     </div>
     <div class="mb-3" style="margin-left: 30%;margin-right: 30%;">
         <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Last Name">
@@ -199,10 +203,10 @@ rel="stylesheet"
     </div>
     <h5 class="fw-bold mt-5">How would you like it delivered?</h5>
     <div class="row gap-2 mb-5 mx-auto">
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
           <h4 class="fw-bold">Email</h4>
         </div>
-        <div class="col border py-3">
+        <div class="col column-x border py-3">
             <h4 class="fw-bold">Print</h4>
         </div>
     </div>
@@ -247,10 +251,10 @@ rel="stylesheet"
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="app-store col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-muted fs-3 mb-4" style="font-family: cursive;">
-              Vhutudzi
+              Edzani
             </h6>
             <span class="fw-bold fs-4">Book your glam on the go</span>
             <p>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vhutudzi | Beauty Services</title>
+  <title>Edzani | Beauty Services</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Font Awesome -->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 rel="stylesheet"
 />
-<!-- Google Fonts -->
+<!-- Google Fonts  -->
 <link
 href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 rel="stylesheet"
@@ -28,7 +28,7 @@ rel="stylesheet"
         Hair, Makeup and Nails now available in Dallas/Fort Worth. Book now!
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+  <nav id="nav-bar1" class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -49,6 +49,9 @@ rel="stylesheet"
       
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item home-page">
+          <a class="nav-link" href="./index.html">Home</a>
+        </li>
         <li class="nav-item">
           <div class="dropdown">
             <a
@@ -81,8 +84,8 @@ rel="stylesheet"
         
       </ul>
       <!-- Navbar brand -->
-    <a class="navbar-brand mt-2" href="./index.html" style="margin-right: 40%;">
-      <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</span>
+    <a class="home-logo navbar-brand mt-2" href="./index.html">
+      <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
     </a>
       <!-- Left links -->
     </div>
@@ -93,14 +96,15 @@ rel="stylesheet"
     <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Sign In -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
         <li class="nav-item">
-            <a class="nav-link fw-bold" href="./pages/signin.html">Sign In</a>
+            <a class="nav-link fw-bold btn-outline-muted rounded-pill bg-primary bg-opacity-25" href="./pages/signin.html">Sign In</a>
         </li>
-        <!-- Booking -->
+        <!-- 
         <li class="nav-item">
-          <a class="nav-link fw-bold text-decoration-underline" href="./pages/booking.html">Book</a>
+          <a class="nav-link fw-bold text-secondary text-decoration-underline btn-outline-secondary rounded" href="./pages/booking.html">Book</a>
         </li>
+        -->
       </ul>
     </div>
     <!-- Right elements -->
@@ -108,7 +112,7 @@ rel="stylesheet"
   <!-- Container wrapper -->
   </nav>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-danger bg-opacity-25" style="display: none;">
+  <nav id="nav-bar2" class="navbar navbar-expand-lg fixed-top navbar-light bg-dark bg-opacity-75" style="display: none;">
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Toggle button -->
@@ -128,7 +132,7 @@ rel="stylesheet"
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Navbar brand -->
       <a class="navbar-brand mt-2" href="./index.html">
-        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</span>
+        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
       </a>
       <!-- Left links -->
     </div>
@@ -143,26 +147,33 @@ rel="stylesheet"
   </div>
   <!-- Container wrapper -->
   </nav>
-<!-- Navbar -->
+  <!-- Navbar -->
   <!-- Navbar -->
 
-  <!-- Background image -->
-  <div class="p-5 text-center bg-image" style="
-      background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
-      height: 600px;
-    ">
-    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="text-white">
-          <h1 class="display-1 mb-3" style="font-family: cursive;">Vhutudzi</h1>
+   <!-- Hero Section -->
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="./images/hero-video-desktop.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-1 mb-3" style="font-family: cursive;">Edzani</h1>
           <h4 class="text-uppercase mb-3">Beauty on Call</h4>
           <a class="btn btn-danger btn-lg " href="./pages/booking.html" role="button">book now</a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Background image -->
-
+  </header>
+  <!-- Hero Section -->
+ 
   <!-- Mission -->
   <div class="container mt-5 mb-5">
     <h3 class="fw-bold text-muted text-center"> We're on a mission to eliminate bad hair days, 
@@ -197,14 +208,14 @@ rel="stylesheet"
           <div class="card">
             <div class="card-body text-center">
               <h5 class="card-title">Nail maintenance</h5>
-              <p class="card-text">
+              <p class="card-text service-h5">
                   Starting at $40
               </p>
               <p class="card-text">
                   Get fresh nails right in your home, hotel, or office.
               </p>
             </div>
-            <img src="./images/nails.webp" class="mt-4" alt="nails" />
+            <img src="./images/nails.webp" class="service-img" alt="nails" />
             <button class="btn btn-outline-light bg-secondary" style="left: 36%; bottom: 5%; position: absolute; text-shadow: 2px solid black;">
               book nails
             </button>
@@ -221,7 +232,7 @@ rel="stylesheet"
                   Face events with confidence—and flawless makeup.
               </p>
           </div>
-            <img src="./images/makeup.webp" class="mt-4"
+            <img src="./images/makeup.webp" class="service-img"
               alt="makeup" />
               <button class="btn btn-outline-light bg-secondary" style="left: 36%; bottom: 5%; position: absolute;">
                 book makeup
@@ -255,15 +266,17 @@ rel="stylesheet"
           Get glam
         </div>
       </div>
-      <button class="btn btn-outline-dark fs-5 mt-5" style="max-width: 25%; margin-left: 46%;">Get started</button>
+      <div class="text-center">
+        <button class="btn btn-outline-dark fs-6 mt-5">Get started</button>
+      </div>
     </div>
-    <div class="container-fluid mt-5">
+    <div class="container-fluid overflow-hidden mt-5">
       <div class="row align-items-center">
         <div class="col-6 p-3">
-          <img src="./images/beautypros.webp" alt="beautypros">
+          <img src="./images/beautypros.webp" class="get-img" alt="beautypros">
         </div>
-        <div class="col-5 ms-5" style="background: blue; clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);">
-          <div class="m-5" style="color: bisque; padding-top: 40%; padding-bottom: 40%;">
+        <div class="get-to-know col-lg-6 col-md-6 col-sm-12">
+          <div>
             <h4 class="fw-bolder display-5 mb-5">
               <span class="fw-bold" style="font-size:large;">Get to know</span><br/>Our beauty pros
             </h4>
@@ -421,10 +434,10 @@ rel="stylesheet"
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <div class="app-store col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-muted fs-3 mb-4" style="font-family: cursive;">
-            Vhutudzi
+            Edzani
           </h6>
           <span class="fw-bold fs-4">Book you glam on the go</span>
           <p>
@@ -505,6 +518,25 @@ rel="stylesheet"
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
+
+  <script>
+
+    const changeRubbish = () => {
+      const navbarOne = document.getElementById('nav-bar1');
+      const navbarTwo = document.getElementById('nav-bar2');
+      const scrollValue = window.scrollY;
+      if(scrollValue > 150){
+        navbarOne.style.display = 'none';
+        navbarTwo.style.display = '';
+      }else{
+        navbarOne.style.display = '';
+        navbarTwo.style.display = 'none';
+      }
+    }
+
+    window.addEventListener('scroll', changeRubbish);
+    
+  </script>
 
   <script src="./main.js"></script>
 

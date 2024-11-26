@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhutudzi | Weddings</title>
+    <title>Edzani | Weddings</title>
     <!-- CSS Link -->
      <link rel="stylesheet" href="../styles.css">
     <!-- Font Awesome -->
@@ -32,25 +32,30 @@ rel="stylesheet"
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
     <!-- Container wrapper -->
-    <div class="container-fluid">
+    <div class="container-fluid topnav mynavbar">
       <!-- Toggle button -->
       <button
         data-mdb-collapse-init
-        class="navbar-toggler"
+        class="navbar-toggler toggle-button"
         type="button"
         data-mdb-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onclick="navbarToggleIcon()"
       >
-        <i class="fas fa-bars"></i>
+      <!-- <i class="fa-solid fa-bars fa-xl"></i> -->
+      <i class="fa-solid fa-bars fa-xl"></i>
       </button>
   
       <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse collapsible-content navbar-collapse text-md-center" id="navbarSupportedContent">
         
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item home-page">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
           <li class="nav-item">
             <div class="dropdown">
               <a
@@ -67,7 +72,7 @@ rel="stylesheet"
                 <li><a class="dropdown-item" href="./howitworks.html">How it Works</a></li>
                 <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
                 <li><a class="dropdown-item" href="./packages.html">Packages</a></li>
-                <li><a class="dropdown-item" href="./weddings.html">Gift Cards</a></li>
+                <li><a class="dropdown-item" href="./giftcard.html">Gift Cards</a></li>
               </ul>
             </div>
           </li>
@@ -77,32 +82,31 @@ rel="stylesheet"
           <li class="nav-item">
             <a class="nav-link" href="./weddings.html">Weddings</a>
           </li>
-          <li class="nav-item me-5">
+          <li class="nav-item md-me-5 lg-me-0">
             <a class="nav-link" href="./booking.html">Become a Pro</a>
           </li>
-          
         </ul>
         <!-- Navbar brand -->
-      <a class="navbar-brand mt-2" href="../index.html" style="margin-right: 40%;">
-        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</span>
+      <a class="home-logo navbar-brand mt-2" href="../index.html">
+        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
       </a>
         <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
-      <!-- Right elements -->
-      <div class="d-flex align-items-center">
+         <!-- Right elements -->
+      <div class="d-flex right-elements">
         <!-- Sign In -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav gap-2">
           <li class="nav-item">
-              <a class="nav-link fw-bold" href="./signin.html">Sign In</a>
+              <a class="nav-link fw-bold btn-outline-muted rounded-pill bg-primary bg-opacity-25" href="./signin.html">Sign In</a>
           </li>
           <!-- Booking -->
           <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-underline" href="./booking.html">Book</a>
+            <a class="nav-link fw-bold text-secondary text-decoration-underline btn-outline-secondary rounded" href="./booking.html">Book</a>
           </li>
         </ul>
       </div>
       <!-- Right elements -->
+      </div>
+      <!-- Collapsible wrapper -->
     </div>
     <!-- Container wrapper -->
   </nav>
@@ -111,11 +115,11 @@ rel="stylesheet"
   <!-- Container -->
   <div class="container-fluid mt-2" style="background: blue;">
     <div class="row d-flex align-items-center">
-      <div class="col text-center p-5" style="background: blue;">
+      <div class="col-lg-6 col-md-6 col-sm-12 text-center p-5" style="background: blue;">
         <span class="display-4 text-muted fw-bold text-uppercase">We Hear Wedding Bells</span>
-        <p class="fs-4 text-white">Your big day is a big deal. With Vhutudzi, you can feel confident knowing our team of bridal-certified beauty pros will bring your dream look to life.</p>
+        <p class="fs-4 text-white">Your big day is a big deal. With Edzani, you can feel confident knowing our team of bridal-certified beauty pros will bring your dream look to life.</p>
       </div>
-      <div class="col">
+      <div class="col-lg-6 col-md-6 col-sm-12">
         <img src="../images/GS_wedding_hero.webp" class="img-fluid" alt="GS_wedding_hero" />
       </div>
     </div>
@@ -124,17 +128,17 @@ rel="stylesheet"
 
   <!-- advantages -->
    <div class="container-fluid bg-danger py-4 bg-opacity-25">
-    <h1 class="py-3 fw-bold">Why Vhutudzi?</h1>
-    <div class="d-flex align-items-start bg-light bg-opacity-25 p-3 rounded">
-      <div class="col-4">
+    <h1 class="py-3 fw-bold">Why Edzani?</h1>
+    <div class="d-flex row align-items-start bg-light bg-opacity-25 p-3 rounded">
+      <div class="col-lg-3 col-md-3 col-sm-12 me-4">
         <h5 class="fw-bold">Experts in bridal</h5>
         <p>Our premier team of bridal-certified beauty pros have completed 12,000+ bridal beauty services.</p>
       </div>
-      <div class="col-4">
+      <div class="col-lg-3 col-md-3 col-sm-12 me-4">
         <h5 class="fw-bold">Here for it all</h5>
         <p>From your engagement photos to the big day, we're here for you every step of the way.</p>
       </div>
-      <div class="col-4">
+      <div class="col-lg-3 col-md-3 col-sm-12">
         <h5 class="fw-bold">We make it easy</h5>
         <p>Book your trial appointment and our Wedding Concierge will be in touch to plan for your big day.</p>
       </div>
@@ -146,8 +150,8 @@ rel="stylesheet"
   <div class="container-fluid my-3">
     <span class="display-5 border-bottom text-secondary fw-bold mb-3">Wedding Services</span>
     <div class="row d-flex align-items-end bg-body-tertiary mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Trial Hair</h5>
                   <p class="card-text">Includes an in-depth consultation, step-by-step styling, and placing of extensions, a veil, and/or hair accessories.</p>
@@ -161,8 +165,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Trial Makeup</h5>
                   <p class="card-text">Includes an in-depth consultation, step-by-step application, and false lashes.</p>
@@ -174,10 +178,10 @@ rel="stylesheet"
                     <button type="button" class="btn btn-outline-dark" data-mdb-ripple-init>Book Now</button>
                   </div>
                 </div>
-              </div>
+            </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Day Hair</h5>
                   <p class="card-text">From whimsical waves to a structured updo, your wedding day hairstyle includes the application of a veil, comb, accessories and/or extensions. (We recommend setting up a trial beforehand.)</p>
@@ -191,8 +195,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Day Makeup</h5>
                   <p class="card-text">From natural and elevated to dramatic, our bridal-certified makeup artist will work closely with you to create your perfect wedding day makeup look. Includes false lashes and an Erno Laszlo Eye Mask. (We recommend setting up a trial beforehand.)</p>
@@ -209,8 +213,8 @@ rel="stylesheet"
     </div>
     <span class="fs-3 text-dark fw-bold mb-3"><i class="fas fa-asterisk text-secondary"></i>  Glam for your crew</span>
     <div class="row d-flex align-items-end bg-body-tertiary mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+      <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Bridal Party Hair Downstyle</h5>
                   <p class="card-text">Includes any styles worn down, including straight hair, waves, accent braids and the application of extensions and/or accessories.</p>
@@ -223,9 +227,9 @@ rel="stylesheet"
                   </div>
                 </div>
               </div>
-        </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Bridal Party Hair Upstyle</h5>
                   <p class="card-text">Includes any styles worn up, including ponytails, braids, buns, updos, half-up styles and the application of extensions and/or accessories.</p>
@@ -238,9 +242,9 @@ rel="stylesheet"
                   </div>
                 </div>
               </div>
-        </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Bridal Party Makeup</h5>
                   <p class="card-text">Our team of expert makeup artists works closely with your bridal party to ensure they look and feel their best. This service includes a full makeup application and false lashes.</p>
@@ -253,9 +257,9 @@ rel="stylesheet"
                   </div>
                 </div>
               </div>
-        </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Flower Girl Hair</h5>
                   <p class="card-text">Our expert hair stylists will make your flower girl feel part of the bridal party by creating their desired hairstyle.</p>
@@ -268,12 +272,12 @@ rel="stylesheet"
                   </div>
                 </div>
               </div>
-        </div>
+      </div>
     </div>
     <span class="fs-3 text-dark fw-bold mb-3"><i class="fas fa-asterisk text-secondary"></i>  Glam for It All</span>
     <div class="row d-flex align-items-end bg-body-tertiary mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 180px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Engagement Photos</h5>
                   <p class="card-text">All eyes are on you! Enjoy your spotlight moment with photo ready hair and makeup.</p>
@@ -283,8 +287,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 180px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Bridal Shower</h5>
                   <p class="card-text">Start your shower day with a well-deserved pamper party of one (or invite a few friends too).</p>
@@ -294,8 +298,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 180px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Bachelorette Party</h5>
                   <p class="card-text">Whether it's girls night out or a relaxing, spa-like scene, every bachelorette needs a group Glam session.</p>
@@ -305,8 +309,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 180px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Rehersal Dinner</h5>
                   <p class="card-text">Kick off the wedding festivities with beautiful hair and makeup the night before.</p>
@@ -319,49 +323,38 @@ rel="stylesheet"
     </div>
     <div class="text-center mb-5">
         <span class="display-5 text-shadow text-black fw-bold mb-3">As Seen In</span>
-        <div class="d-flex align-items-start bg-body-tertiary my-5">
-            <div class="col">
-                <img src="../images/bridesLogo.webp" class="img-fluid p-5" alt="bridesLogo" />
+        <div class="d-flex row justify-content-center align-items-center bg-body-tertiary my-5">
+            <div class="col-lg-2 col-md-2 col-sm-3">
+                <img src="../images/bridesLogo.webp" class="img-fluid p-3" alt="bridesLogo" />
             </div>
-            <div class="col">
-                <img src="../images/KnotLogo.webp" class="img-fluid p-5" alt="KnotLogo" />
+            <div class="col-lg-2 col-md-2 col-sm-3">
+                <img src="../images/KnotLogo.webp" class="img-fluid p-3" alt="KnotLogo" />
             </div>
-            <div class="col">
-                <img src="../images/allureLogo.webp" class="img-fluid p-5" alt="allureLogo" />
+            <div class="col-lg-2 col-md-2 col-sm-3">
+                <img src="../images/allureLogo.webp" class="img-fluid p-3" alt="allureLogo" />
             </div>
-            <div class="col">
-                <img src="../images/instyleLogo.webp" class="img-fluid p-5" alt="instyleLogo" />
+            <div class="col-lg-2 col-md-2 col-sm-3">
+                <img src="../images/instyleLogo.webp" class="img-fluid p-3" alt="instyleLogo" />
             </div>
-            <div class="col">
-                <img src="../images/bridalguideLogo.webp" class="img-fluid p-5" alt="bridalguideLogo" />
+            <div class="col-lg-2 col-md-2 col-sm-3">
+                <img src="../images/bridalguideLogo.webp" class="img-fluid p-3" alt="bridalguideLogo" />
             </div>
           </div>
     </div>
   </div>
   <!-- Wedding services -->
 
-  <!-- FAQs-->
-   <div class="container-fluid bg-danger bg-opacity-25 text-center">
+  <!-- FAQs -->
+  <div class="container-fluid bg-danger bg-opacity-25 text-center">
     <h1 class="fw-bold text-center py-5">FAQs</h1>
-    <div>
-      <p><span class="fst-italic text-muted">Question: </span><span class="text-black btn-ques">Do all Vhutudzi memberships automatically renew?</span></p>
-      <span class="text-secondary txt-ans mb-3"><span class="fst-italic text-success">Answer: </span>Yes, all Glamsquad memberships automatically renew on a monthly basis after any prepaid time has ended. Prepaid time may include 1 month, 3 months, or yearly.</span>
+    <div class="pb-5 faq">
+      
     </div>
-    <div>
-      <p><span class="fst-italic text-muted">Question: </span><span class="text-black btn-ques1">What is the Glamsquad membership?</span></p>
-      <span class="text-secondary txt-ans1 mb-3"><span class="fst-italic text-success">Answer: </span>The Glamsquad membership is the perfect way for you to get your favorite blowouts for less on a monthly basis. Plus, you can enjoy exclusive members-only perks such as a 10% discount on additional hair, nail and makeup services.</span>
-    </span>
-    </div>
-    <div class="pb-5">
-      <p><span class="fst-italic text-muted">Question: </span><span class="text-black btn-ques2">How do I purchase the Glamsquad membership?</span></p>
-      <span class="text-secondary txt-ans2"><span class="fst-italic text-success">Answer: </span>Under the Services menu on Glamsquad.com or in the Glamsquad app, click Membership. Add the Membership option to your cart and check out to purchase.</span>
-    </span>
-    </div>
-    <div class="text-center">
+    <div class="text-center pb-4">
       <button type="button" class="btn btn-outline-muted my-2" data-mdb-ripple-init>See All FAQs</button>
     </div>
    </div>
-  <!-- FAQs-->
+  <!-- FAQs -->
 
   <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -398,10 +391,10 @@ rel="stylesheet"
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="app-store col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-muted fs-3 mb-4" style="font-family: cursive;">
-              Vhutudzi
+              Edzani
             </h6>
             <span class="fw-bold fs-4">Book your glam on the go</span>
             <p>

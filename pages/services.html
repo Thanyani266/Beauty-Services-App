@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhutudzi | Our Services</title>
+    <title>Edzani | Our Services</title>
     <!-- CSS Link -->
      <link rel="stylesheet" href="../styles.css">
     <!-- Font Awesome -->
@@ -32,25 +32,30 @@ rel="stylesheet"
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
     <!-- Container wrapper -->
-    <div class="container-fluid">
+    <div class="container-fluid topnav mynavbar">
       <!-- Toggle button -->
       <button
         data-mdb-collapse-init
-        class="navbar-toggler"
+        class="navbar-toggler toggle-button"
         type="button"
         data-mdb-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        onclick="navbarToggleIcon()"
       >
-        <i class="fas fa-bars"></i>
+      <!-- <i class="fa-solid fa-bars fa-xl"></i> -->
+      <i class="fa-solid fa-bars fa-xl"></i>
       </button>
   
       <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse collapsible-content navbar-collapse text-md-center" id="navbarSupportedContent">
         
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item home-page">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
           <li class="nav-item">
             <div class="dropdown">
               <a
@@ -77,32 +82,31 @@ rel="stylesheet"
           <li class="nav-item">
             <a class="nav-link" href="./weddings.html">Weddings</a>
           </li>
-          <li class="nav-item me-5">
+          <li class="nav-item md-me-5 lg-me-0">
             <a class="nav-link" href="./booking.html">Become a Pro</a>
           </li>
-          
         </ul>
         <!-- Navbar brand -->
-      <a class="navbar-brand mt-2" href="../index.html" style="margin-right: 40%;">
-        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</span>
+      <a class="home-logo navbar-brand mt-2" href="../index.html">
+        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
       </a>
         <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
-      <!-- Right elements -->
-      <div class="d-flex align-items-center">
+         <!-- Right elements -->
+      <div class="d-flex right-elements">
         <!-- Sign In -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav gap-2">
           <li class="nav-item">
-              <a class="nav-link fw-bold" href="./signin.html">Sign In</a>
+              <a class="nav-link fw-bold btn-outline-muted rounded-pill bg-primary bg-opacity-25" href="./signin.html">Sign In</a>
           </li>
           <!-- Booking -->
           <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-underline" href="./booking.html">Book</a>
+            <a class="nav-link fw-bold text-secondary text-decoration-underline btn-outline-secondary rounded" href="./booking.html">Book</a>
           </li>
         </ul>
       </div>
       <!-- Right elements -->
+      </div>
+      <!-- Collapsible wrapper -->
     </div>
     <!-- Container wrapper -->
   </nav>
@@ -131,8 +135,8 @@ rel="stylesheet"
   <div class="container-fluid my-3">
     <span class="display-5 border-bottom text-secondary fw-bold mb-3">Our Services</span>
     <div class="row d-flex align-items-end bg-body-tertiary px-5 mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Blowout</h5>
                   <p class="card-text">From sleek lengths to beach waves, your best hair day awaits.</p>
@@ -146,8 +150,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Dry Styling</h5>
                   <p class="card-text">Skip the shower. Revive dry, unwashed hair with a fresh style.</p>
@@ -161,8 +165,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Updo</h5>
                   <p class="card-text">Take your hair up a notch with the updo of your choice.</p>
@@ -176,8 +180,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Special Occasion Hair</h5>
                   <p class="card-text">An elevated take on our signature blowout for life's special moments.</p>
@@ -191,8 +195,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Special Occasion Updo</h5>
                   <p class="card-text">A luxe updo service for red carpets, galas, photoshoots + more.</p>
@@ -206,8 +210,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Haircut + Blowout</h5>
                   <p class="card-text">Starts with a consultation, ends with a fresh cut + your favorite blowout.</p>
@@ -221,8 +225,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Men's Haircut</h5>
                   <p class="card-text">A consultation + cut for all hair types + lengths. (Includes clipper work.)</p>
@@ -236,8 +240,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Kids Haircut</h5>
                   <p class="card-text">A custom cut for your little one from our patient pros.</p>
@@ -257,8 +261,8 @@ rel="stylesheet"
         <span class="display-6">Select your service, then choose from add-ons like extensions, braids, and half-up styles.</span>
     </div>
     <div class="row d-flex align-items-end bg-body-tertiary px-5 mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Makeup</h5>
                   <p class="card-text">Put your best face forward with day or night makeup by our pros.</p>
@@ -272,8 +276,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Everyday Makeup</h5>
                   <p class="card-text">Make your natural features pop with a lighter, faster application. (Available Monday - Friday from 8am - 2pm)</p>
@@ -287,8 +291,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Makeup Lesson</h5>
                   <p class="card-text">Become your own pro with a lesson on any makeup technique.</p>
@@ -302,8 +306,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 240px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Special Occasion Makeup</h5>
                   <p class="card-text">A luxurious, event-ready application for life's special moments.</p>
@@ -323,8 +327,8 @@ rel="stylesheet"
         <span class="display-6">Select your service, then choose from add-ons like false lashes and airbrush.</span>
     </div>
     <div class="row d-flex align-items-end bg-body-tertiary px-5 mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 170px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Photoshoots</h5>
                   <p class="card-text">Get camera-ready + keep your squad by your side throughout the shoot.</p>
@@ -337,8 +341,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 170px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Events + Group Glam</h5>
                   <p class="card-text">From company parties to bachelorettes, customize your group glam sesh.</p>
@@ -351,8 +355,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-warning bg-opacity-25" style="height: 170px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-warning bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Custom</h5>
                   <p class="card-text">Not seeing what you want? We're flexible. Let's create something you'll love.</p>
@@ -371,8 +375,8 @@ rel="stylesheet"
         <span class="display-6">Whether you have a group of 4 or 400, our dedicated concierge team will tailor your event experience to your needs.</span>
     </div>
     <div class="row d-flex align-items-end bg-body-tertiary px-5 mb-3">
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 230px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Day Hair</h5>
                   <p class="card-text">Work closely with your bridal-certified stylist to create your perfect look.</p>
@@ -386,8 +390,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 230px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Day Makeup</h5>
                   <p class="card-text">Work closely with your bridal-certified artist to create your perfect look.</p>
@@ -401,8 +405,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 230px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Trial Makeup</h5>
                   <p class="card-text">Get an in-depth consult, step-by-step application + false lashes.</p>
@@ -416,8 +420,8 @@ rel="stylesheet"
                 </div>
               </div>
         </div>
-        <div class="col-6 my-2">
-            <div class="card bg-danger bg-opacity-25" style="height: 230px;">
+        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+            <div class="card card-1 bg-danger bg-opacity-25">
                 <div class="card-body">
                   <h5 class="card-title fw-bold fs-3">Wedding Trial Hair</h5>
                   <p class="card-text">Get an in-depth consult, step-by-step styling + accessory placement.</p>
@@ -474,10 +478,10 @@ rel="stylesheet"
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="app-store col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-muted fs-3 mb-4" style="font-family: cursive;">
-              Vhutudzi
+              Edzani
             </h6>
             <span class="fw-bold fs-4">Book your glam on the go</span>
             <p>

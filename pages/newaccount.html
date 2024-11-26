@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhutudzi | New Account</title>
+    <title>Edzani | New Account</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../styles.css">
     <!-- Font Awesome -->
     <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        rel="stylesheet"
-    />
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        rel="stylesheet"
-    />
-    <!-- MDB - Material Design for Bootstrap -->
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
-        rel="stylesheet"
-    />
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
+  rel="stylesheet"
+/>
 </head>
 <body>
     <!-- Navbar -->
@@ -28,89 +30,91 @@
     </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 1%;">
-    <!-- Container wrapper -->
-    <div class="container-fluid">
-      <!-- Toggle button -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-  
-      <!-- Collapsible wrapper -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-        <!-- Left links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+    
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           
-            <div class="dropdown me-2 mt-2">
-                <li
-                  class="dropdown-toggle nav-item fw-bold"
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item home-page">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
                   type="button"
                   id="dropdownMenuButton"
-                  data-mdb-toggle="dropdown"
+                  data-mdb-dropdown-init
+                  data-mdb-ripple-init
                   aria-expanded="false"
-                  style="margin-bottom: 20%;"
-                >Services
-            <li>
+                >
+                  Services
+              </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="./booking.html">Book a Service</a></li>
                   <li><a class="dropdown-item" href="./howitworks.html">How it Works</a></li>
                   <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
                   <li><a class="dropdown-item" href="./packages.html">Packages</a></li>
-                  <li><a class="dropdown-item" href="./giftcard.html">Gift Cards</a></li>
+                  <li><a class="dropdown-item" href="./weddings.html">Gift Cards</a></li>
                 </ul>
               </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" href="./membership.html">Membership</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" href="./weddings.html">Weddings</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold" href="./booking.html">Become a Pro</a>
-          </li>
-        </ul>
-        <!-- Left links -->
-      </div>
-      <!-- Collapsible wrapper -->
-      <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="../index.html" style="margin-right: 40%;">
-        <h2 class="fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</h2>
-      </a>
-      <!-- Left links -->
-  
-      <!-- Right links -->
-      <div class="d-flex align-items-center">
-        <!-- Sign In -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link fw-bold" href="./signin.html">Sign In</a>
-          </li>
-          <!-- Booking -->
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-underline" href="./booking.html">Book</a>
-          </li>
-        </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./membership.html">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./weddings.html">Weddings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./booking.html">Become a Pro</a>
+            </li>
+          </ul>
+          <!-- Left links -->
         </div>
+        <!-- Collapsible wrapper -->
+        <!-- Navbar brand -->
+        <a class="home-logo navbar-brand mt-2" href="../index.html">
+          <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
+        </a>
+        <!-- Left links -->
+    
+        <!-- Right links -->
+        <div class="d-flex align-items-center">
+          <!-- Sign In -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+                <a class="nav-link fw-bold btn-outline-muted rounded-pill bg-primary bg-opacity-25" href="./signin.html">Sign In</a>
+            </li>
+            <!-- Booking -->
+            <li class="nav-item">
+              <a class="nav-link fw-bold text-secondary text-decoration-underline btn-outline-secondary rounded" href="./booking.html">Book</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Right links -->
       </div>
-      <!-- Right links -->
-    </div>
-    <!-- Container wrapper -->
-  </nav>
+      <!-- Container wrapper -->
+    </nav>
   <!-- Navbar -->
 
   <!-- new account form -->
   <div class="container mt-5 mb-5" style="width: 40%;">
     <h4 class="text-center display-5 fw-bolder mt-4">Create an account</h4>
-    <p class="text-center mb-5">Already have Vhutudzi account? 
+    <p class="text-center mb-5">Already have Edzani account? 
         <a href="./signin.html" class="text-danger fw-bolder">Sign In</a></p>
   <form>
     <!-- Firstname -->
@@ -146,7 +150,7 @@
         <!-- Checkbox -->
         <div class="form-check mb-5">
           <input class="form-check-input bg-danger" type="radio" value="" id="form1Example3" />
-          <label class="form-check-label fw-bolder" for="form1Example3"> I agree to Vhutudzi's 
+          <label class="form-check-label fw-bolder" for="form1Example3"> I agree to Edzani's 
             <a href="" class="text-danger">Terms of Service</a> and 
             <a href="" class="text-danger">Privacy Policy</a></label>
         </div>
@@ -193,10 +197,10 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="app-store col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-muted fs-3 mb-4" style="font-family: cursive;">
-              Vhutudzi
+              Edzani
             </h6>
             <span class="fw-bold fs-4">Book your glam on the go</span>
             <p>

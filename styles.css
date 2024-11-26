@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .btn-ques, .btn-ques1, .btn-ques2 {
     cursor: pointer;
 }
@@ -5,3 +9,212 @@
 .txt-ans, .txt-ans1, .txt-ans2 {
     display: none;
 }
+
+/* Header Section */
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  /* Media Query for devices with no curse pointers and no hover functionality */
+  
+  /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+  
+    header video {
+      display: none;
+    }
+  }
+
+  /* services */
+  .service-img{
+    margin-top: 6%;
+  }
+
+  .get-to-know{
+    background: blue; 
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%)
+  }
+
+  .get-to-know div{
+    color: bisque; 
+    padding-top: 40%; 
+    padding-bottom: 40%; 
+  }
+
+/* Wedding page */
+.card-1{
+    height: 240px;
+}
+
+/* Wedding page */
+.column-x:hover{
+    color: #fff;
+    background: #a3e4d7;
+    cursor: pointer;
+}
+
+/* Navbar */
+.home-logo{
+    margin-right: 35% !important;
+}
+.home-page{
+    display: none !important;
+}
+
+.collapsible-content{
+    text-align: center;
+}
+
+.right-elements{
+    text-align: center !important;
+    justify-content: center !important;
+}
+
+.toggle-button:active{
+    background: brown;
+}
+
+/* Faqs */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+/* Media Queries */
+
+
+/* When the browser is at most 1300px */
+@media screen and (max-width: 1300px) {
+    .service-img{
+        margin-top: 0;
+    }
+    .img-membership{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* When the browser is at most 1200px */
+@media screen and (max-width: 1200px) {
+    .home-logo{
+        margin-right: 25% !important;
+    }
+}
+/* When the browser is at most 1000px */
+@media screen and (max-width: 1000px) {
+    /* Footer */
+    .app-store img{
+        width: 200px;
+    }
+
+    /* Navbar */
+    .home-logo{
+        display: none !important;
+    }
+    .home-page{
+        display: block !important;
+    }
+}
+
+/* When the browser is at most 991.21px */
+@media screen and (max-width: 991.21px) {
+    .service-h5{
+        margin-top: 19%;
+    }
+    .get-to-know{ 
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    }
+    .card-1{
+        height: 500px;
+    }
+}
+
+/* When the browser is at most 767.21px */
+@media screen and (max-width: 767.21px) {
+    .service-h5{
+        margin-top: 0;
+    }
+    .get-to-know{ 
+        clip-path: none;
+    }
+    .get-to-know div{
+        padding-top: 10%; 
+        padding-bottom: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 210%;
+        height: auto; 
+    }
+    .get-img{
+        width: 210%;
+        height: auto;
+    }
+}
+
+/* When the browser is at most 470px */
+@media screen and (max-width: 470px) {
+    .get-to-know div{
+        width: 90%;
+    }
+}
+
+  

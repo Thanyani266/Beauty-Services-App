@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vhutudzi | Beauty Services App</title>
+    <title>Edzani | Beauty Services App</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../styles.css">
     <!-- Font Awesome -->
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -11,13 +13,13 @@
     />
     <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-        rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
     />
-    <!-- MDB - Material Design for Bootstrap -->
+    <!-- MDB -->
     <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
-        rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css"
+      rel="stylesheet"
     />
 </head>
 <body>
@@ -48,58 +50,60 @@
         
         <!-- Left links -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          
-            <div class="dropdown me-2 mt-2">
-                <li
-                  class="dropdown-toggle nav-item fw-bold"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-mdb-toggle="dropdown"
-                  aria-expanded="false"
-                  style="margin-bottom: 20%;"
-                >Services
-            <li>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="./booking.html">Book a Service</a></li>
-                  <li><a class="dropdown-item" href="./howitworks.html">How it Works</a></li>
-                  <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
-                  <li><a class="dropdown-item" href="./packages.html">Packages</a></li>
-                  <li><a class="dropdown-item" href="./giftcard.html">Gift Cards</a></li>
-                </ul>
-              </div>
+          <li class="nav-item home-page">
+            <a class="nav-link" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="./membership.html">Membership</a>
+            <div class="dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-mdb-dropdown-init
+                data-mdb-ripple-init
+                aria-expanded="false"
+              >
+                Services
+            </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="./howitworks.html">How it Works</a></li>
+                <li><a class="dropdown-item" href="./services.html">Our Services</a></li>
+                <li><a class="dropdown-item" href="./packages.html">Packages</a></li>
+                <li><a class="dropdown-item" href="./giftcard.html">Gift Cards</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="./weddings.html">Weddings</a>
+            <a class="nav-link" href="./membership.html">Membership</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fw-bold" href="./booking.html">Become a Pro</a>
+            <a class="nav-link" href="./weddings.html">Weddings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./booking.html">Become a Pro</a>
           </li>
         </ul>
         <!-- Left links -->
       </div>
       <!-- Collapsible wrapper -->
       <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#" style="margin-right: 40%;">
-        <h2 class="fw-bold" style="font-family: cursive; color: cadetblue;">Vhutudzi</h2>
+      <a class="home-logo navbar-brand mt-2" href="../index.html">
+        <span class="h2 fw-bold" style="font-family: cursive; color: cadetblue;">Edzani</span>
       </a>
       <!-- Left links -->
   
       <!-- Right links -->
       <div class="d-flex align-items-center">
         <!-- Sign In -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link fw-bold" href="./signin.html">Sign In</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+          <li class="nav-item">
+              <a class="nav-link fw-bold btn-outline-muted rounded-pill bg-primary bg-opacity-25" href="./signin.html">Sign In</a>
           </li>
           <!-- Booking -->
           <li class="nav-item">
-            <a class="nav-link fw-bold text-decoration-underline" href="./booking.html">Book</a>
+            <a class="nav-link fw-bold text-secondary text-decoration-underline btn-outline-secondary rounded" href="./booking.html">Book</a>
           </li>
         </ul>
-        </div>
       </div>
       <!-- Right links -->
     </div>
@@ -110,7 +114,7 @@
   <!-- Sign In form -->
   <div class="container mt-5 mb-5" style="width: 40%;">
     <h4 class="text-center fw-bolder mt-4">Sign In</h4>
-    <p class="text-center mb-5">New to Vhutudzi? <a href="./newaccount.html" class="text-danger fw-bolder">Create an account</a></p>
+    <p class="text-center mb-5">New to Edzani? <a href="./newaccount.html" class="text-danger fw-bolder">Create an account</a></p>
   <form>
     <!-- Email input -->
     <div class="form-outline mb-4">
@@ -181,10 +185,10 @@
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="app-store col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <!-- Content -->
             <h6 class="text-muted fs-3 mb-4" style="font-family: cursive;">
-              Vhutudzi
+              Edzani
             </h6>
             <span class="fw-bold fs-4">Book your glam on the go</span>
             <p>
