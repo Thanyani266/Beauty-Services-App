@@ -5,7 +5,7 @@ This is the Beauty Services website, which includes several pages to showcase di
 ## Site URL
 
 The website is live and can be accessed at:  
-[www.thanas.com](http://www.thanas.com)
+[www.edzani+beauty-services-app.com](https://thanyani266.github.io/Beauty-Services-App/)
 
 ## Features
 
